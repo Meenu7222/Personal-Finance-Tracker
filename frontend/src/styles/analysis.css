@@ -1,0 +1,66 @@
+/* Luxury Gradient Theme for Analysis Page */
+.analysis-page {
+  min-height: 100vh;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Heading */
+.analysis-page h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #f0e6d2;
+}
+
+/* Dropdown */
+.analysis-page select {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.analysis-page select:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.analysis-page select option {
+  background: #203a43;
+  color: #fff;
+}
+
+/* Chart Container */
+.analysis-page .chart-container {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar Customization */
+.analysis-page ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.analysis-page ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.analysis-page ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

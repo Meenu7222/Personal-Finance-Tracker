@@ -1,0 +1,100 @@
+/* Black + Gold Luxury Theme */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center Rectangle */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 40px;
+  width: 350px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #d4af37; /* Gold Border */
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+  text-align: center;
+}
+
+/* Title */
+.login-box h2 {
+  color: #d4af37; /* Gold */
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #d4af37;
+  outline: none;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+}
+
+.login-box input::placeholder {
+  color: rgba(255, 215, 0, 0.7);
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: linear-gradient(135deg, #ffd700, #daa520);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+}
+
+/* Toggle Link */
+.toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgba(255, 215, 0, 0.8);
+}
+
+.toggle-text span {
+  color: #ffd700;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-text span:hover {
+  text-decoration: underline;
+}
+
+/* Error Message */
+.error-msg {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff4f4f;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}

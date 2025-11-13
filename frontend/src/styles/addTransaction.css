@@ -1,0 +1,90 @@
+/* Page container */
+.add-transaction-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b1055, #7597de);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Transaction form card */
+.transaction-form {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Title */
+.transaction-form h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.transaction-form input,
+.transaction-form select {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.transaction-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.transaction-form select {
+  color: #fff;
+}
+
+.transaction-form input:focus,
+.transaction-form select:focus {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+/* Button */
+.transaction-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s;
+}
+
+.transaction-form button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
