@@ -23,5 +23,31 @@
 
 ---
 
-## Folder structure (suggested)
 
+
+
+---
+
+## Quick start (local)
+
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
+- PostgreSQL (or SQLite for simpler local usage)
+
+### 1) Backend
+
+```bash
+cd backend
+# install
+npm install
+
+# create .env (example)
+# PORT=5000
+# DATABASE_URL=postgres://user:password@localhost:5432/finance_db
+# JWT_SECRET=your_jwt_secret
+
+# run (dev)
+npm run dev
+# or
+node server.js
